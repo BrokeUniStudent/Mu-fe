@@ -1,0 +1,36 @@
+
+    <form action="http://127.0.0.1:8090/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".mp3"></input>
+            <button type="submit">Upload file</button>
+    </form>
+    <form action="http://127.0.0.1:8090/new" method="post">
+        <br>
+        Username <input type="text" name="username"></input><br><br>
+        Song name <input type="text" name="song_name"></input><br><br>
+        Player background <input type="text" name="player_background" id="background_url" placeholder="enter a link and wait">
+        <button type="submit">submit</button>
+    </form>
+    
+    <!-- <button onclick="preview()">Preview</button><br>
+    <div id="player_preview"></div> -->
+
+
+        
+    <script>
+    // function preview(){
+    //     var publisher = document.getElementsByName("username")[0].value
+    //     var song = document.getElementsByName("song_name")[0].value
+    //     var url = document.getElementById('background_url').value
+    //     var player_preview = document.getElementById('player_preview')
+        
+    //     player_preview.innerHTML = '<p class="publisher_name">'+publisher+'</p><br><br><p class="song_name">'+song+'</p>'
+    //     //play the file just uploaded
+    //     player_preview.innerHTML += '<audio controls><source src="" type="audio/mp3"></audio>'
+    //     if (url){
+    //         var player = document.getElementsByTagName('audio')[0]
+    //         player_preview.style = "background-image:url("+url+");filter:alpha(opacity=80);-moz-opacity:0.8;opacity:0.8"
+    //     }
+    //     }
+
+    </script>
+    

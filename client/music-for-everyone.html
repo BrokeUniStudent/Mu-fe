@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Mu-fe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+      <link href="style.css" rel="stylesheet"></link>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+         
+
+
+      
+   </head>
+   <body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="music-for-everyone.html">Mu-fe</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Contact Us</a></li>
+                
+
+            <form action='http://127.0.0.1:8090/search' method="GET" class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" name="keyword" class="form-control" placeholder=""></input>
+                </div>
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+            
+            </ul>
+            </div>
+        
+            <ul class="nav navbar-nav navbar-right"> 
+                <li><button class="btn btn-default navbar-btn authenticate" onclick="warning()"><span class="glyphicon glyphicon-user"></span> Sign up</button></li> 
+                <li><button class="btn btn-default navbar-btn authenticate" onclick="warning()"><span class="glyphicon glyphicon-log-in"></span> Login</button></li> 
+                <li><button class="btn btn-default navbar-btn publish">Publish songs</button></li>
+            </ul>   
+            
+        </div>
+    </nav>
+
+    <div id="content"></div>
+
+    </body>
+    <script>function warning(){alert('Sorry, this site is private. This function will be avaliable when we can guarantee its robustness')}
+
+        // function publish(){
+        //     var content = document.getElementsByClassName("content")[0]
+        //     content.innerHTML = '<form id="publish_info" name="publish_info" method="post" enctype="application/json">'
+        //     content.innerHTML += '<input type="file" name="song" accept=".mp3, .mkv, .wma, .ncm"></input><br>'
+        //     content.innerHTML += 'Username <input type="text" name="username"></input><br><br>'
+        //     content.innerHTML += 'Song name <input type="text" name="song_name"></input><br><br>'
+        //     content.innerHTML += 'Player background <input type="text" id="background_url"><br>'
+        //     content.innerHTML += '<button onclick="preview()">Preview</button>'
+        //     content.innerHTML += '<div class="player_preview"></div>'
+        //     content.innerHTML += '<button type="submit" class="submit" onclick="upload()">Upload</submit></form>'
+        // }
+        
+        // function main(){
+        // }
+
+        // function preview(){
+        //     document.getElementById("background_url")
+        // }
+        </script>
+        <script src="index.js"></script>
+        
+</html>
